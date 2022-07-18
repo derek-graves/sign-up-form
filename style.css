@@ -32,6 +32,13 @@ body {
 
 .text-and-form {
   width: 63vw;
+
+  background-color: #f9fafb;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 
 .logo {
@@ -89,5 +96,12 @@ h1 {
 
   font-family: inherit;
   font-size: inherit;
+}
 
+.text-and-form p {
+  font-family: "Capriola-Regular", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
 }
