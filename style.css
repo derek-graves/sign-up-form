@@ -1,3 +1,12 @@
+:root {
+  --logo-color: #fff;
+}
+
+@font-face {
+  font-family: "Capriola-Regular";
+  src: url("./assets/fonts/Capriola-Regular.ttf");
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -5,12 +14,14 @@
 }
 
 body {
+  width: 100vw;
   height: 100vh;
   display: flex;
 }
 
 .background {
   width: 37vw;
+
   background-image: url("./assets/bg.jpg");
   background-position: center;
   background-size: cover;
@@ -19,4 +30,34 @@ body {
 
 .text-and-form {
   width: 63vw;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+
+  margin-top: 30vh;
+  padding: 1rem 0;
+
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.logo > svg {
+  width: 5rem;
+  height: 5.2rem; /* extra height needed to prevent cutoff at top and bottom*/
+  min-width: 5rem;
+  min-height: 5.2rem;
+
+  fill: var(--logo-color);
+  stroke: var(--logo-color);
+  stroke-width: 1;
+}
+
+h1 {
+  font-family: "Capriola-Regular", sans-serif;
+  font-size: 3rem;
+
+  color: var(--logo-color);
 }
