@@ -1,5 +1,6 @@
 :root {
   --logo-color: #fff;
+  --bg-tint: rgba(0,0,0,0.45);
 }
 
 @font-face {
@@ -42,7 +43,7 @@ body {
   margin-top: 30vh;
   padding: 1rem 0;
 
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: var(--bg-tint);
 }
 
 .logo > svg {
@@ -63,16 +64,24 @@ h1 {
   color: var(--logo-color);
 }
 
-.credits {
-  color: var(--logo-color);
-
-  font-family: "Capriola-Regular", sans-serif;
-  font-size: 0.75rem;
-  text-align: center;
-  
+.credits-container {
   position: absolute;
   bottom: 5px;
   width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.credits {
+  color: var(--logo-color);
+  background-color: var(--bg-tint);
+
+  font-family: "Capriola-Regular", sans-serif;
+  font-size: 0.75rem;
+
+  padding: 0.25rem;
 }
 
 .credits > a {
