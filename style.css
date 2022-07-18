@@ -1,6 +1,7 @@
 :root {
   --logo-color: #fff;
   --bg-tint: rgba(0,0,0,0.45);
+  --fonts: "Capriola-Regular", sans-serif;
 }
 
 @font-face {
@@ -65,7 +66,7 @@ body {
 }
 
 h1 {
-  font-family: "Capriola-Regular", sans-serif;
+  font-family: var(--fonts);
   font-size: 3rem;
 
   color: var(--logo-color);
@@ -85,7 +86,7 @@ h1 {
   color: var(--logo-color);
   background-color: var(--bg-tint);
 
-  font-family: "Capriola-Regular", sans-serif;
+  font-family: var(--fonts);
   font-size: 0.75rem;
 
   padding: 0.25rem;
@@ -99,7 +100,7 @@ h1 {
 }
 
 .text-and-form p {
-  font-family: "Capriola-Regular", sans-serif;
+  font-family: var(--fonts);
   font-size: 1.5rem;
   font-weight: 100;
   padding-left: 2rem;
