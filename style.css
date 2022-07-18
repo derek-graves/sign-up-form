@@ -1,6 +1,22 @@
-/* Reset form controls*/
-input, button {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+}
+
+.background {
+  width: 37vw;
+  background-image: url("./assets/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.text-and-form {
+  width: 63vw;
 }
