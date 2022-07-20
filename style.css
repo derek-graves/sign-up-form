@@ -1,8 +1,9 @@
 :root {
   --logo-color: #fff;
   --bg-tint: rgba(0,0,0,0.45);
-  --fonts: "Capriola-Regular", sans-serif;
+  --default-fonts: "Capriola-Regular", sans-serif;
   --label-color: #555;
+  --label-fonts: 'Trebuchet MS', Tahoma, sans-serif;
 }
 
 @font-face {
@@ -69,7 +70,7 @@ body {
 }
 
 h1 {
-  font-family: var(--fonts);
+  font-family: var(--default-fonts);
   font-size: 3rem;
 
   color: var(--logo-color);
@@ -89,7 +90,7 @@ h1 {
   color: var(--logo-color);
   background-color: var(--bg-tint);
 
-  font-family: var(--fonts);
+  font-family: var(--default-fonts);
   font-size: 0.75rem;
 
   padding: 0.25rem;
@@ -103,7 +104,7 @@ h1 {
 }
 
 .text-and-form p {
-  font-family: var(--fonts);
+  font-family: var(--default-fonts);
   font-size: 1.5rem;
   font-weight: 100;
 }
@@ -139,11 +140,10 @@ form {
 }
 
 label {
-  font-family: 'Trebuchet MS', Tahoma, sans-serif;
+  font-family: var(--label-fonts);
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 1px;
-
 
   color: var(--label-color);
 }
@@ -165,9 +165,10 @@ input:focus {
   /* box-shadow: inset 0px 0px 4px 4px #eee; */
 
   /* outset shadow */
-  box-shadow: 2px 2px 6x #bbb;
+  box-shadow: 2px 2px 6px #bbb;
 }
 
+/* Remove webkit outline */
 input:focus-visible {
   outline: none;
 }
