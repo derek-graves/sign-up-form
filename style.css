@@ -1,9 +1,10 @@
 :root {
+  --default-fonts: "Capriola-Regular", sans-serif;
+  --label-fonts: 'Trebuchet MS', Tahoma, sans-serif;
+
   --logo-color: #fff;
   --bg-tint: rgba(0,0,0,0.45);
-  --default-fonts: "Capriola-Regular", sans-serif;
   --label-color: #555;
-  --label-fonts: 'Trebuchet MS', Tahoma, sans-serif;
 }
 
 @font-face {
@@ -33,7 +34,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.text-and-form {
+.content {
   width: 63vw;
 
   background-color: #f9fafb;
@@ -103,7 +104,7 @@ h1 {
   font-size: inherit;
 }
 
-.text-and-form p {
+.content p {
   font-family: var(--default-fonts);
   font-size: 1.5rem;
   font-weight: 100;
