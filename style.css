@@ -6,6 +6,7 @@
   --bg-tint: rgba(0,0,0,0.45);
   --label-color: #555;
   --button-bg-color: #48B0B9;
+  --button-hover-color: #38A0A9;
 }
 
 @font-face {
@@ -197,9 +198,25 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #38A0A9;
+  background-color: var(--button-hover-color)
 }
 
 button[type="submit"]:focus {
   outline: none;
+}
+
+.has-account {
+  margin-left: 32px;
+
+  font-family: var(--default-fonts);
+  font-size: 0.75rem;
+}
+
+.has-account a {
+  color: var(--button-bg-color);
+  text-decoration: none;
+}
+
+.has-account a:hover {
+  color: var(--button-hover-color);
 }
