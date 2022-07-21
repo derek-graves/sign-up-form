@@ -7,6 +7,8 @@
   --label-color: #555;
   --button-bg-color: #48B0B9;
   --button-hover-color: #38A0A9;
+  --invalid-border-color: red;
+  --invalid-bg-color: rgb(255, 220, 220);
 }
 
 @font-face {
@@ -219,4 +221,9 @@ button[type="submit"]:focus {
 
 .has-account a:hover {
   color: var(--button-hover-color);
+}
+
+input:invalid {
+  border-color: var(--invalid-border-color);
+  background-color: var(--invalid-bg-color);
 }
