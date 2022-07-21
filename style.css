@@ -195,3 +195,11 @@ button[type="submit"] {
 
   box-shadow: 2px 2px 6px #bbb;
 }
+
+button[type="submit"]:hover {
+  background-color: #38A0A9;
+}
+
+button[type="submit"]:focus {
+  outline: none;
+}
