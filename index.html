@@ -6,6 +6,7 @@
   <meta name="viewport" content="device-width, initital-scale=1.0">
   <title>Sign Up!</title>
   <link rel="stylesheet" href="./style.css">
+  <script src="./sign-up-form.js" defer></script>
 </head>
 
 <body>
@@ -86,25 +87,25 @@
               placeholder=" ">
           </div>
 
-          <div class="input" id="error-container">
+          <div class="input" id="pwd-container">
             <label for="pwd">PASSWORD</label>
             <input 
               type="password" 
               id="pwd" 
               name="pwd" 
               pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}$" 
-              title="Password must be at least 8 characters and include at least one lowercase letter, at least one uppercase letter, and at least one number. "
+              title="Password must be at least 8 characters and include at least one lowercase letter, at least one uppercase letter, and at least one number."
               placeholder=" ">
             <div class="error">* Passwords do not match</div>
           </div>
 
-          <div class="input">
+          <div class="input" id="pwd-check-container">
             <label for="pwd-check">CONFIRM PASSWORD</label>
-            <input type="password" id="pwd-check" name="pwd-check">
+            <input type="password" id="pwd-check" name="pwd-check" onchange="check()">
           </div>
       </div>
     </form>
-    <button type="submit" form="account-creation">Create Account</button>
+    <button type="submit" id="submit" form="account-creation" disabled>Create Account</button>
     <div class="has-account">Already have an account? <a href="">Log in</a></div>
   </div>
 </body>
