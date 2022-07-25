@@ -132,7 +132,7 @@ form {
   display: flex;
   flex-wrap: wrap;
 
-  padding-top: 32px;
+  margin-top: 32px;
 }
 
 .input {
@@ -223,7 +223,12 @@ button[type="submit"]:focus {
   color: var(--button-hover-color);
 }
 
-input:invalid {
+input:invalid:not(:focus):not(:placeholder-shown) {
   border-color: var(--invalid-border-color);
   background-color: var(--invalid-bg-color);
 }
+
+#pwd {
+  position: relative;
+}
+
