@@ -228,7 +228,31 @@ input:invalid:not(:focus):not(:placeholder-shown) {
   background-color: var(--invalid-bg-color);
 }
 
-#pwd {
+#error-container {
   position: relative;
 }
 
+.error {
+  position: absolute;
+  bottom: -14px;
+  left: 0px;
+
+  color: var(--invalid-border-color);
+
+  font-family: var(--default-fonts);
+  font-size: 0.6rem;
+
+  display: none;
+}
+
+.pwd-error label {
+  color: var(--invalid-border-color);
+}
+
+.pwd-error input {
+   border-color: var(--invalid-border-color);
+}
+
+.pwd-error div {
+  display: block;
+}
